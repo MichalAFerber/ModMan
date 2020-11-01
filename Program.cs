@@ -25,10 +25,10 @@ namespace ModMan
 
             s += Environment.NewLine;
             s += Environment.NewLine;
-            s += "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.";
+            s += "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) This license requires that reusers give credit to the creator. It allows reusers to copy and distribute the material in any medium or format, for noncommercial purposes only. If others remix, adapt, or build upon the material, they may not distribute the modified material. To view a copy of this license, visit";
             s += Environment.NewLine;
             s += Environment.NewLine;
-            s += "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the GNU General Public License for more details.";
+            s += "https://creativecommons.org/licenses/by-nc-nd/4.0";
 
             return s;
         }
