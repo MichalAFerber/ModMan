@@ -1,0 +1,11 @@
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\bin\Release\ModMan.exe.config
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\bin\Release\ModMan.exe
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\bin\Release\ModMan.pdb
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.csprojAssemblyReference.cache
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.frmAbout.resources
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.frmMain.resources
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.Properties.Resources.resources
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.csproj.GenerateResource.cache
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.csproj.CoreCompileInputs.cache
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.exe
+C:\Users\mi2030\Documents\Visual Studio Code\ModMan\obj\Release\ModMan.pdb
