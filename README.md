@@ -2,6 +2,8 @@
 ![](/images/image.png)
 
 ![GitHub Release](https://img.shields.io/github/v/release/MichalAFerber/ModMan)
+![GitHub Release Date](https://img.shields.io/github/release-date/MichalAFerber/ModMan)
+![GitHub watchers](https://img.shields.io/github/watchers/MichalAFerber/ModMan)
 ![GitHub forks](https://img.shields.io/github/forks/MichalAFerber/ModMan)
 
 # ModMan
