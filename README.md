@@ -2,7 +2,6 @@
 
 [![GitHub Release](https://img.shields.io/github/v/release/MichalAFerber/ModMan)](https://github.com/MichalAFerber/ModMan/releases/)
 [![GitHub Release Date](https://img.shields.io/github/release-date/MichalAFerber/ModMan)](https://github.com/MichalAFerber/ModMan/releases/)
-[![GitHub watchers](https://img.shields.io/github/watchers/MichalAFerber/ModMan)](https://github.com/MichalAFerber/ModMan/watchers)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber)
 
 # ModMan
