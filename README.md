@@ -8,7 +8,7 @@ Latest Build: [Version 2020.04.23.0001](https://github.com/MichalAFerber/ModMan/
 
 ![](/images/image.png)
 
-<a id="Installation">&nbsp;</a>
+<a id="Installation"></a>
 ## Installation
 
 Unzip the downloaded file and place the file wherever you desire, I placed mine in the folder `C:\Program Files (x86)\ModMan`. I also created a shortcut to it and placed it on my desktop. The first time you run the program you may get a blue box as shown below. Click the `More info` link.
@@ -21,7 +21,7 @@ Then click the `Run anyway` button. You should only encounter this the first tim
 
 [Back to top](#)
 
-<a id="SettingItUp">&nbsp;</a>
+<a id="SettingItUp"></a>
 ## Setting It Up
 
 Now that the program is up and working. You need to define the folders before the program will work properly.
@@ -46,7 +46,7 @@ This is the root of the folder that contains all of your different mod folders. 
 
 [Back to top](#)
 
-<a id="AdvancedSettings">&nbsp;</a>
+<a id="AdvancedSettings"></a>
 ## Advanced Settings
 
 **Developer Mode**  
