@@ -7,7 +7,7 @@
 # ModMan
 
 Mod Manager for Farming Simulator 2019. FS19 game XML file and mod manager. Easy to use, simple interface, and only one file.  
-**This README was last updated on May 02, 2022**
+This README was last updated on May 02, 2022
 
 *   [Installation](#Installation)
 *   [Setting It Up](#SettingItUp)
