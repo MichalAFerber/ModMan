@@ -1,14 +1,19 @@
 <a id="#"></a>
+![](/images/image.png)
+
+![GitHub Release](https://img.shields.io/github/v/release/MichalAFerber/ModMan)
+![GitHub forks](https://img.shields.io/github/forks/MichalAFerber/ModMan)
+
+**Updated on May 02, 2022**
+
+# ModMan
+
+Mod Manager for Farming Simulator 2019. FS19 game XML file and mod manager. Easy to use, simple interface, and only one file.  
 
 *   [Installation](#Installation)
 *   [Setting It Up](#SettingItUp)
 *   [Advanced Settings](#AdvancedSettings)
 
-**Updated on May 02, 2022**  
-Mod Manager for Farming Simulator 2019. FS19 game XML file and mod manager. Easy to use, simple interface, and only one file.  
-Latest Build: [Version 2020.04.23.0001](https://github.com/MichalAFerber/ModMan/releases/download/2020.04.23.001/ModMan_v2020_04_23_0001.zip)
-
-![](/images/image.png)
 
 <a id="Installation"></a>
 ## Installation
