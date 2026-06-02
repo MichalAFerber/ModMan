@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ModMan — User Guide</title>
+  <meta name="description" content="Installation and setup guide for ModMan, the Farming Simulator 2019 mod manager." />
+  <style>
+    :root {
+      --bg: #1a1a1a;
+      --surface: #242424;
+      --text: #e6e6e6;
+      --muted: #a0a0a0;
+      --accent: #4da3ff;
+      --code-bg: #2d2d2d;
+      --border: #333;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa;
+        --surface: #ffffff;
+        --text: #1a1a1a;
+        --muted: #555;
+        --accent: #0066cc;
+        --code-bg: #f0f0f0;
+        --border: #ddd;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 0.25rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    p { margin: 0 0 1rem; }
+    a { color: var(--accent); }
+    code {
+      background: var(--code-bg);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-family: "SF Mono", Consolas, Monaco, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: var(--code-bg);
+      padding: 0.9rem 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      font-size: 0.9rem;
+    }
+    pre code { background: none; padding: 0; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin: 1rem 0;
+      display: block;
+    }
+    figure { margin: 1.5rem 0; }
+    figcaption {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      text-align: center;
+    }
+    nav.toc {
+      background: var(--surface);
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 1.5rem 0 2rem;
+    }
+    nav.toc strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    nav.toc ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+    nav.toc li { margin: 0.2rem 0; }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ModMan — User Guide</h1>
+    <p class="meta">Mod Manager for <em>Farming Simulator 2019</em>. Last updated May 2, 2022.</p>
+
+    <p>
+      Latest build:
+      <a href="https://github.com/MichalAFerber/ModMan/releases/download/2020.04.23.001/ModMan_v2020_04_23_0001.zip">v2020.04.23.0001</a>
+      &middot;
+      <a href="https://github.com/MichalAFerber/ModMan">GitHub</a>
+    </p>
+
+    <figure>
+      <img src="images/ModManAbout.png" alt="ModMan About dialog" />
+    </figure>
+
+    <nav class="toc">
+      <strong>Contents</strong>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#setting-it-up">Setting It Up</a></li>
+        <li><a href="#advanced-settings">Advanced Settings</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="installation">Installation</h2>
+
+    <p>
+      Unzip the downloaded file and place the file wherever you desire — for example,
+      <code>C:\Program Files (x86)\ModMan</code>. Create a desktop shortcut if you want.
+      The first time you run the program, you may see a blue Windows Defender SmartScreen
+      prompt. Click the <strong>More info</strong> link.
+    </p>
+
+    <figure>
+      <img src="images/ModMan_WindowsProtected1.png" alt="Windows Defender SmartScreen — More info link" />
+    </figure>
+
+    <p>
+      Then click the <strong>Run anyway</strong> button. You should only see this prompt on first launch.
+    </p>
+
+    <figure>
+      <img src="images/ModMan_WindowsProtected2.png" alt="Windows Defender SmartScreen — Run anyway button" />
+    </figure>
+
+    <h2 id="setting-it-up">Setting It Up</h2>
+    <p>You need to define three folders before the program will work properly.</p>
+
+    <h3>Application Folder</h3>
+    <p>
+      If you run FS19 through Steam, the default installation path is:
+    </p>
+    <pre><code>C:\Program Files (x86)\Steam\steamapps\common\Farming Simulator 19</code></pre>
+    <p>
+      Select that path or wherever FS19 is installed. If you're unsure, right-click the
+      FS19 launch icon → <strong>Properties</strong> — the <strong>Start in</strong> path
+      is what you want.
+    </p>
+
+    <figure>
+      <img src="images/ModMan_FileProperties.png" alt="FS19 shortcut Properties dialog showing the Start in path" />
+    </figure>
+
+    <h3>Game Settings Folder</h3>
+    <p>
+      The settings folder is the location of <code>game.xml</code> and <code>gamesettings.xml</code>:
+    </p>
+    <pre><code>C:\Users\YourNameHere\Documents\My Games\FarmingSimulator2019\</code></pre>
+
+    <h3>Mod Folder Root</h3>
+    <p>
+      The root folder containing all of your different mod folders. If you've never separated
+      mods before, this folder will need to be created. ModMan's author puts separate mod folders
+      in the default FS19 mod folder location:
+    </p>
+    <pre><code>C:\Users\YourNameHere\Documents\My Games\FarmingSimulator2019\mods\</code></pre>
+
+    <figure>
+      <img src="images/ModMan1.png" alt="ModMan main UI" />
+    </figure>
+
+    <h2 id="advanced-settings">Advanced Settings</h2>
+
+    <figure>
+      <img src="images/ModManShowAdvancedMenuOption.png" alt="Show Advanced menu option" />
+    </figure>
+
+    <h3>Developer Mode</h3>
+    <p>
+      Enables the developer console in-game — lets you type commands. Reference for FS19 dev
+      console commands:
+      <a href="https://www.yekbot.com/farming-simulator-19-console-commands-developer-console/">yekbot.com/farming-simulator-19-console-commands-developer-console</a>.
+    </p>
+
+    <h3>Audio</h3>
+    <p>Toggle audio on/off and set volume as a decimal percentage:</p>
+    <pre><code>1.0000 = 100%
+0.7000 = 70%</code></pre>
+
+    <h3>Logging</h3>
+    <p>
+      Toggle logging on/off and change the log filename. Game default: logging enabled,
+      filename <code>log.txt</code>.
+    </p>
+
+    <figure>
+      <img src="images/ModManSelectedModFolder.png" alt="ModMan with mod folder selected" />
+    </figure>
+
+    <footer>
+      <p>
+        ModMan is archived and read-only as of July 11, 2025 &middot;
+        <a href="https://github.com/MichalAFerber/ModMan">github.com/MichalAFerber/ModMan</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
