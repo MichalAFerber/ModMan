@@ -25,10 +25,10 @@ namespace ModMan
 
             s += Environment.NewLine;
             s += Environment.NewLine;
-            s += "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) This license requires that reusers give credit to the creator. It allows reusers to copy and distribute the material in any medium or format, for noncommercial purposes only. If others remix, adapt, or build upon the material, they may not distribute the modified material. To view a copy of this license, visit";
+            s += "MIT License. ModMan is free and open source. You are free to use, copy, modify, merge, publish, distribute, and sublicense it, provided the copyright notice and this permission notice are included in all copies. The software is provided \"as is\", without warranty of any kind. To view a copy of this license, visit";
             s += Environment.NewLine;
             s += Environment.NewLine;
-            s += "https://creativecommons.org/licenses/by-nc-nd/4.0";
+            s += "https://opensource.org/license/mit";
 
             return s;
         }
