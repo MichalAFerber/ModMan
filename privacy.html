@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#151a11" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f2e8" media="(prefers-color-scheme: light)">
+<title>Privacy Policy — ModMan</title>
+<meta name="description" content="Privacy policy for the ModMan website: privacy-friendly analytics only, no cookies, no personal data. The app runs entirely on your own PC.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://plausible.thompsonblack.us; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://plausible.thompsonblack.us; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="fs19_round.png" type="image/png">
+<link rel="preload" href="fonts/jetbrains-mono-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script defer data-domain="michalaferber.github.io/ModMan" src="https://plausible.thompsonblack.us/js/script.js"></script>
+<style>
+  @font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-latin-variable.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap}
+  :root{--bg:#151a11;--surface:#1e2618;--text:#ece6d3;--muted:#98a086;--accent:#e8a33d;--field:#7cb84a;--border:#39442e;
+    --mono:"JetBrains Mono",ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  @media (prefers-color-scheme:light){:root:not([data-theme]){--bg:#f5f2e8;--surface:#fdfcf5;--text:#242e1a;--muted:#5f6b4d;--accent:#a85f0b;--field:#3f7a17;--border:#d8d0bb}}
+  :root[data-theme="light"]{--bg:#f5f2e8;--surface:#fdfcf5;--text:#242e1a;--muted:#5f6b4d;--accent:#a85f0b;--field:#3f7a17;--border:#d8d0bb}
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;font-size:17px;min-height:100dvh;-webkit-tap-highlight-color:transparent}
+  a{color:var(--accent)}
+  .wrap{max-width:720px;margin:0 auto;padding:0 max(24px,env(safe-area-inset-left)) 0 max(24px,env(safe-area-inset-right))}
+  .skip{position:absolute;left:-999px;top:0;z-index:10;background:var(--accent);color:#1c1607;font-weight:700;padding:10px 16px;text-decoration:none}
+  .skip:focus{left:8px;top:8px}
+  .strip{border-bottom:1px solid var(--accent);font-family:var(--mono);font-size:12px;color:var(--muted);padding:8px 0}
+  .strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;max-width:860px}
+  .home{color:var(--muted);text-decoration:none}
+  .home:hover{color:var(--accent)}
+  .strip-right{display:inline-flex;align-items:center;gap:8px}
+  .icon-btn{display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:8px;color:var(--muted);background:none;border:0;cursor:pointer;line-height:0;text-decoration:none;transition:color .15s ease}
+  .icon-btn:hover{color:var(--accent)}
+  .icon-btn svg{width:22px;height:22px;display:block;fill:currentColor}
+  a:focus-visible,.icon-btn:focus-visible{outline:3px solid var(--field);outline-offset:3px}
+  .theme-toggle .icon-sun,.theme-toggle .icon-moon{display:none}
+  :root .theme-toggle .icon-sun{display:block}
+  @media (prefers-color-scheme:light){:root:not([data-theme]) .theme-toggle .icon-sun{display:none}:root:not([data-theme]) .theme-toggle .icon-moon{display:block}}
+  :root[data-theme="light"] .theme-toggle .icon-sun{display:none}:root[data-theme="light"] .theme-toggle .icon-moon{display:block}
+  :root[data-theme="dark"] .theme-toggle .icon-sun{display:block}:root[data-theme="dark"] .theme-toggle .icon-moon{display:none}
+  main{padding:56px 0}
+  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--field);margin-bottom:14px}
+  h1{font-family:var(--mono);font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+  .updated{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:30px}
+  h2{font-family:var(--mono);font-size:1.2rem;font-weight:700;margin:34px 0 10px}
+  h2::before{content:"■ ";color:var(--field);font-size:.7em;vertical-align:.15em}
+  p,li{max-width:66ch;margin-bottom:12px}
+  ul{margin:0 0 12px 22px}
+  strong{color:var(--text)}
+  code{font-family:var(--mono);font-size:.9em;background:var(--surface);padding:2px 6px;border:1px solid var(--border)}
+  footer{border-top:1px solid var(--accent);padding:30px 0 60px;font-size:.9rem;color:var(--muted)}
+  .foot-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin-bottom:16px}
+  .gh-link{display:inline-flex;align-items:center;gap:9px;color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:13px;min-height:40px}
+  .gh-link:hover{color:var(--accent)}
+  .gh-link svg{width:20px;height:20px;fill:currentColor;flex:none}
+  .foot-nav{font-family:var(--mono);font-size:13px}
+  .foot-nav a{color:var(--muted);text-decoration:none}
+  .foot-nav a:hover{color:var(--accent)}
+  .credit{margin-top:18px;font-size:.9rem;color:var(--muted)}
+  .credit a{color:var(--accent)}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="strip"><div class="wrap">
+  <a class="home" href="index.html">← ModMan</a>
+  <span class="strip-right">
+    <a class="icon-btn" href="https://github.com/MichalAFerber/ModMan" target="_blank" rel="noopener" aria-label="View this project on GitHub (opens in a new tab)" title="View this project on GitHub">
+      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    </a>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM5.64 5.64a1 1 0 0 1 1.42 0l.7.7a1 1 0 1 1-1.41 1.42l-.71-.71a1 1 0 0 1 0-1.41zm11.3 11.3a1 1 0 0 1 1.42 0l.7.7a1 1 0 0 1-1.41 1.42l-.71-.71a1 1 0 0 1 0-1.41zM18.36 5.64a1 1 0 0 1 0 1.41l-.71.71a1 1 0 1 1-1.41-1.42l.7-.7a1 1 0 0 1 1.42 0zM7.05 16.95a1 1 0 0 1 0 1.41l-.71.71a1 1 0 0 1-1.41-1.42l.7-.7a1 1 0 0 1 1.42 0z"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8 8 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8 8 0 0 1 .74-3.36 1 1 0 0 0-1.3-1.3A10.14 10.14 0 1 0 22 14.05a1 1 0 0 0-.36-1.05z"></path></svg>
+    </button>
+  </span>
+</div></header>
+
+<main id="main"><div class="wrap">
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 24 July 2026</p>
+
+  <p>This page covers the <strong>ModMan</strong> website (<code>michalaferber.github.io/ModMan</code>) — a static user guide and download page for a free Farming Simulator 19 mod manager. The short version: it collects no personal data, sets no cookies, and the app itself runs entirely on your own PC.</p>
+
+  <h2>What the site collects</h2>
+  <p>Only <strong>privacy-friendly, aggregate analytics</strong>, via a self-hosted <a href="https://plausible.io/data-policy" target="_blank" rel="noopener">Plausible</a> instance (<code>plausible.thompsonblack.us</code>). Plausible:</p>
+  <ul>
+    <li>sets <strong>no cookies</strong> and uses <strong>no cross-site or persistent identifiers</strong>;</li>
+    <li>does <strong>not</strong> collect or store personal data or full IP addresses;</li>
+    <li>records only aggregate counts — page views, referrer, and coarse device/country — that can't be tied back to you.</li>
+  </ul>
+  <p>There is no advertising, no fingerprinting, and no Google/Meta tracking of any kind.</p>
+
+  <h2>Hosting</h2>
+  <p>The site is served by <strong>GitHub Pages</strong>. As with any web host, GitHub may process standard request logs (including IP addresses) to deliver and protect the site; that processing is governed by <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.</p>
+
+  <h2>The app itself</h2>
+  <p>ModMan is a desktop Windows application that runs entirely on your own PC. <strong>It does not connect to the internet, upload anything, or phone home.</strong> It only reads and writes your local Farming Simulator 19 files — game settings and mod folders — on your machine.</p>
+
+  <h2>Your choices</h2>
+  <p>Because no personal data is collected and no cookies are set, there's nothing to opt out of, export, or delete. Blocking the analytics domain in your browser has no effect on the site's functionality.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:michal@techguywithabeard.com">michal@techguywithabeard.com</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the "last updated" date above will change with it.</p>
+</div></main>
+
+<footer><div class="wrap">
+  <div class="foot-meta">
+    <a class="gh-link" href="https://github.com/MichalAFerber/ModMan" target="_blank" rel="noopener" aria-label="View this project on GitHub (opens in a new tab)">
+      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+      <span>Source on GitHub</span>
+    </a>
+    <nav class="foot-nav" aria-label="Legal"><a href="index.html">Home</a> · <a href="terms.html">Terms</a></nav>
+  </div>
+  <p class="credit">© <span id="yr">2026</span> | Created with ❤️ by <a href="https://michalferber.dev/" target="_blank" rel="noopener">Michal Ferber</a>, aka <a href="https://techguywithabeard.com/" target="_blank" rel="noopener">TechGuyWithABeard</a>.</p>
+</div></footer>
+
+<script>
+  (function(){
+    var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
+    var btn=document.querySelector('.theme-toggle');if(!btn)return;
+    function current(){var t=document.documentElement.getAttribute('data-theme');if(t)return t;return window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}
+    function sync(){var t=current();btn.setAttribute('aria-pressed',String(t==='dark'));btn.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');}
+    btn.addEventListener('click',function(){var t=current()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('theme',t);}catch(e){}sync();});
+    sync();
+  })();
+</script>
+</body>
+</html>
