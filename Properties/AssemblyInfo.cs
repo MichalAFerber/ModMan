@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Michal A Ferber")]
 [assembly: AssemblyProduct("ModMan")]
-[assembly: AssemblyCopyright("Copyright © 2020")]
+[assembly: AssemblyCopyright("Copyright © 2020-2026 Michal Ferber")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
