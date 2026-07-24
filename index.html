@@ -73,16 +73,27 @@
     :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
     :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
-    /* content */
-    main { max-width: 820px; margin: 0 auto; padding: 2rem 1rem; }
-    h1, h2, h3 { line-height: 1.2; font-family: var(--mono); letter-spacing: -0.02em; }
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 3rem); font-weight: 800; margin: 0 0 0.25rem;
-      border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;
-    }
+    /* hero */
+    .hero { padding: 64px 0 48px; border-bottom: 1px solid var(--border); }
+    .eyebrow { font-family: var(--mono); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--field); margin: 0 0 18px; }
+    h1 { font-family: var(--mono); font-size: clamp(2.2rem, 7vw, 4rem); line-height: 1.03; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 20px; }
+    h1 .thin { color: var(--muted); font-weight: 300; }
+    .lede { font-size: 1.15rem; max-width: 56ch; color: var(--text); margin: 0; }
+    .lede em { color: var(--accent); font-style: normal; }
+    .hero-cta { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .btn { display: inline-block; background: var(--accent); color: #1c1607; font-weight: 700; text-decoration: none; padding: 13px 26px; border: 2px solid var(--accent); min-height: 44px; }
+    .btn:hover { background: transparent; color: var(--accent); }
+    .vertag { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+    .vertag a { color: var(--muted); }
+    .vertag a:hover { color: var(--accent); }
+    .badges { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--mono); font-size: 12px; }
+    .badges span { border: 1px solid var(--border); color: var(--muted); padding: 5px 10px; border-radius: 2px; }
+
+    /* guide body */
+    .guide { padding: 2.5rem 0 0; }
+    h2, h3 { line-height: 1.2; font-family: var(--mono); letter-spacing: -0.02em; }
     h2 { font-size: 1.6rem; font-weight: 800; margin: 2.5rem 0 0.75rem; color: var(--accent); }
     h3 { font-size: 1.15rem; font-weight: 700; margin: 1.75rem 0 0.5rem; color: var(--field); }
-    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; font-family: var(--mono); }
     p { margin: 0 0 1rem; }
     a { color: var(--accent); }
     a:hover { color: var(--field); }
@@ -111,10 +122,14 @@
     }
     nav.toc ul { margin: 0; padding-left: 1.25rem; }
     nav.toc li { margin: 0.2rem 0; }
-    footer {
-      margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-      color: var(--muted); font-size: 0.9rem; text-align: center; font-family: var(--mono);
-    }
+    footer { padding: 44px 0 64px; font-size: 0.92rem; color: var(--muted); }
+    footer .sig { font-family: var(--mono); font-size: 12px; margin-top: 14px; }
+    .foot-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; margin-top: 22px; }
+    .gh-link { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); text-decoration: none; font-family: var(--mono); font-size: 13px; min-height: 40px; transition: color 0.15s ease; }
+    .gh-link:hover { color: var(--accent); }
+    .gh-link svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
+    footer .credit { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--muted); }
+    footer .credit a { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -134,19 +149,23 @@
   </div></header>
 
   <main id="main">
-    <h1>ModMan — User Guide</h1>
-    <p class="meta">Mod Manager for <em>Farming Simulator 2019</em>. Last updated May 2, 2022.</p>
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Farming Simulator 2019 · Windows mod manager</p>
+      <h1>ModMan<span class="thin">.</span></h1>
+      <p class="lede">The user guide for <em>ModMan</em> — a Windows mod manager for Farming Simulator 19. Point it at your game, settings, and mods folders, then toggle developer mode, audio, and logging from one window — no hand-editing XML.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://github.com/MichalAFerber/ModMan/releases/download/2020.04.23.001/ModMan_v2020_04_23_0001.zip">Download ModMan</a>
+        <span class="vertag">v2020.04.23.0001 · Windows · <a href="https://github.com/MichalAFerber/ModMan">GitHub</a></span>
+      </div>
+      <div class="badges" aria-label="At a glance">
+        <span>Free</span><span>Windows</span><span>Farming Sim 19</span><span>Open source</span>
+      </div>
+    </div></section>
 
-    <p>
-      Latest build:
-      <a href="https://github.com/MichalAFerber/ModMan/releases/download/2020.04.23.001/ModMan_v2020_04_23_0001.zip">v2020.04.23.0001</a>
-      &middot;
-      <a href="https://github.com/MichalAFerber/ModMan">GitHub</a>
-    </p>
-
-    <figure>
-      <img src="images/ModManAbout.png" alt="ModMan About dialog" />
-    </figure>
+    <section class="guide"><div class="wrap">
+      <figure>
+        <img src="images/ModManAbout.png" alt="ModMan About dialog" />
+      </figure>
 
     <nav class="toc">
       <strong>Contents</strong>
@@ -242,16 +261,25 @@
       <img src="images/ModManSelectedModFolder.png" alt="ModMan with mod folder selected" />
     </figure>
 
-    <footer>
-      <p>
-        ModMan is archived and read-only as of July 11, 2025 &middot;
-        <a href="https://github.com/MichalAFerber/ModMan">github.com/MichalAFerber/ModMan</a>
-      </p>
-    </footer>
+    </div></section>
+
+    <footer><div class="wrap">
+      <p>Free and open source — the full C# source lives on GitHub. Fork it, learn from it, do what you like with it. No warranty, no support contract; it's a small hobby tool for keeping Farming Simulator 19 mod folders in order.</p>
+      <p class="sig">built by TechGuyWithABeard · a little Windows app for a big mods folder</p>
+      <div class="foot-meta">
+        <a class="gh-link" href="https://github.com/MichalAFerber/ModMan" target="_blank" rel="noopener" aria-label="View this project on GitHub (opens in a new tab)">
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+          <span>Source on GitHub</span>
+        </a>
+      </div>
+      <p class="credit">© <span id="yr">2026</span> | Created with ❤️ by <a href="https://michalferber.dev/" target="_blank" rel="noopener">Michal Ferber</a>, aka <a href="https://techguywithabeard.com/" target="_blank" rel="noopener">TechGuyWithABeard</a>.</p>
+    </div></footer>
   </main>
 
   <script>
     (function () {
+      var yr = document.getElementById('yr');
+      if (yr) yr.textContent = new Date().getFullYear();
       var btn = document.querySelector('.theme-toggle');
       if (!btn) return;
       function current() {
