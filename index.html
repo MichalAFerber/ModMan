@@ -3,124 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#151a11" />
   <title>ModMan — User Guide</title>
   <meta name="description" content="Installation and setup guide for ModMan, the Farming Simulator 2019 mod manager." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src https://plausible.thompsonblack.us; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://plausible.thompsonblack.us; base-uri 'none'; form-action 'none'">
+  <link rel="icon" href="fs19_round.png" type="image/png" />
+  <link rel="preload" href="fonts/jetbrains-mono-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+  <script defer data-domain="michalaferber.github.io/ModMan" src="https://plausible.thompsonblack.us/js/script.js"></script>
   <style>
-    :root {
-      --bg: #1a1a1a;
-      --surface: #242424;
-      --text: #e6e6e6;
-      --muted: #a0a0a0;
-      --accent: #4da3ff;
-      --code-bg: #2d2d2d;
-      --border: #333;
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("fonts/jetbrains-mono-latin-variable.woff2") format("woff2");
+      font-weight: 100 800; font-style: normal; font-display: swap;
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #fafafa;
-        --surface: #ffffff;
-        --text: #1a1a1a;
-        --muted: #555;
-        --accent: #0066cc;
-        --code-bg: #f0f0f0;
-        --border: #ddd;
-      }
+    :root {
+      /* "soil & wheat" palette, matching Modding-in-FS25 */
+      --bg: #151a11; --surface: #1e2618; --surface2: #242e1d;
+      --text: #ece6d3; --muted: #98a086;
+      --accent: #e8a33d;   /* wheat */
+      --field: #7cb84a;    /* field green */
+      --code-bg: #0e120b; --border: #39442e;
+      --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
-      padding: 2rem 1rem;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      font-size: 17px;
+      margin: 0; padding: 2rem 1rem;
+      background: var(--bg); color: var(--text);
+      font-family: var(--sans); line-height: 1.6; font-size: 17px;
     }
-    main {
-      max-width: 820px;
-      margin: 0 auto;
-    }
-    h1, h2, h3 { line-height: 1.25; }
+    main { max-width: 820px; margin: 0 auto; }
+    h1, h2, h3 { line-height: 1.2; font-family: var(--mono); letter-spacing: -0.02em; }
     h1 {
-      font-size: 2.2rem;
-      margin: 0 0 0.25rem;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 0.5rem;
+      font-size: clamp(2.2rem, 6vw, 3rem); font-weight: 800; margin: 0 0 0.25rem;
+      border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;
     }
-    h2 {
-      font-size: 1.6rem;
-      margin: 2.5rem 0 0.75rem;
-      color: var(--accent);
-    }
-    h3 {
-      font-size: 1.15rem;
-      margin: 1.75rem 0 0.5rem;
-    }
-    .meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
+    h2 { font-size: 1.6rem; font-weight: 800; margin: 2.5rem 0 0.75rem; color: var(--accent); }
+    h3 { font-size: 1.15rem; font-weight: 700; margin: 1.75rem 0 0.5rem; color: var(--field); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; font-family: var(--mono); }
     p { margin: 0 0 1rem; }
     a { color: var(--accent); }
+    a:hover { color: var(--field); }
     code {
-      background: var(--code-bg);
-      padding: 0.15rem 0.4rem;
-      border-radius: 3px;
-      font-family: "SF Mono", Consolas, Monaco, monospace;
-      font-size: 0.9em;
+      background: var(--code-bg); padding: 0.15rem 0.4rem; border-radius: 3px;
+      font-family: var(--mono); font-size: 0.9em; border: 1px solid var(--border);
     }
     pre {
-      background: var(--code-bg);
-      padding: 0.9rem 1rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      overflow-x: auto;
-      font-size: 0.9rem;
+      background: var(--code-bg); padding: 0.9rem 1rem; border-radius: 6px;
+      border: 1px solid var(--border); overflow-x: auto; font-size: 0.9rem; font-family: var(--mono);
     }
-    pre code { background: none; padding: 0; }
+    pre code { background: none; padding: 0; border: 0; }
     img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      margin: 1rem 0;
-      display: block;
+      max-width: 100%; height: auto; border: 1px solid var(--border);
+      border-radius: 6px; margin: 1rem 0; display: block;
     }
     figure { margin: 1.5rem 0; }
-    figcaption {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-top: 0.4rem;
-      text-align: center;
-    }
+    figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; text-align: center; font-family: var(--mono); }
     nav.toc {
-      background: var(--surface);
-      padding: 1rem 1.25rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      margin: 1.5rem 0 2rem;
+      background: var(--surface); padding: 1rem 1.25rem; border-radius: 6px;
+      border: 1px solid var(--border); margin: 1.5rem 0 2rem;
     }
     nav.toc strong {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      display: block; margin-bottom: 0.5rem; color: var(--field);
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--mono);
     }
-    nav.toc ul {
-      margin: 0;
-      padding-left: 1.25rem;
-    }
+    nav.toc ul { margin: 0; padding-left: 1.25rem; }
     nav.toc li { margin: 0.2rem 0; }
     footer {
-      margin-top: 4rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-align: center;
+      margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem; text-align: center; font-family: var(--mono);
     }
   </style>
 </head>
